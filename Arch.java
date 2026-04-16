@@ -6,7 +6,7 @@ class Arch extends User {
     @Override
     public void attack(Characters target) {
         try {
-            System.out.println(name + ": execute a custom command..");
+            System.out.println(Color.BLUE + name + ": execute a custom command..");
             Thread.sleep(400);
             System.out.println("Optimizing attack pipeline...");
             Thread.sleep(400);
@@ -23,7 +23,7 @@ class Arch extends User {
     public void useSkill(Characters target) {
         try {
             if (mana >= 10) {
-                System.out.println(name + ": Applying system optimizationg..");
+                System.out.println(Color.BLUE + name + ": Applying system optimization..");
                 Thread.sleep(400);
                 System.out.println("Recompiling kernel flags...");
                 Thread.sleep(400);

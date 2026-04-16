@@ -5,9 +5,9 @@ class Sanity {
     public void useHeal(User user) {
         try {
             user.hp += HEAL;
-            System.out.println(user.name + ": Restarting system service..");
+            System.out.println(Color.GREEN + user.name + ": Restarting system service..");
             Thread.sleep(400);
-            System.out.println("System stabilized (+" + HEAL + ")");
+            System.out.println("System stabilized (+" + HEAL + ")" + Color.RESET);
             Thread.sleep(400);
             Thread.sleep(400);
         } catch (Exception e) {
@@ -18,9 +18,9 @@ class Sanity {
     public void useMana(User user) {
         try {
             user.mana += MANA;
-            System.out.println(user.name + ": sudo privileges refreshed..");
+            System.out.println(Color.CYAN + user.name + ": sudo privileges refreshed..");
             Thread.sleep(400);
-            System.out.println("sanity restored (+" + MANA + ")");
+            System.out.println("sanity restored (+" + MANA + ")" + Color.RESET);
         } catch (Exception e) {
             e.printStackTrace();
         }

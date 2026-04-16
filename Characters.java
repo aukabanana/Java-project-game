@@ -21,12 +21,14 @@ abstract class Characters {
     public void takeDmg(int damage) {
         int reduced = damage - defense;
 
-        if (reduced < 0)
+        if (reduced < 0) {
             reduced = 0;
+        }
+
         hp -= reduced;
 
         try {
-            System.out.println(name + " deleted " + reduced + " files!");
+            System.out.println(Color.RED + name + " deleted " + reduced + " files!");
             Thread.sleep(400);
         } catch (Exception e) {
             e.printStackTrace();

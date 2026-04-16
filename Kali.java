@@ -6,7 +6,7 @@ class Kali extends User {
     @Override
     public void attack(Characters target) {
         try {
-            System.out.println(name + ": Launching basic exploit..");
+            System.out.println(Color.PURPLE + name + ": Launching basic exploit..");
             Thread.sleep(400);
             System.out.println("Scanning vulnerability...");
             Thread.sleep(400);
@@ -23,7 +23,7 @@ class Kali extends User {
     public void useSkill(Characters target) {
         try {
             if (mana >= 15) {
-                System.out.println(name + ": Deploying adv. exploit toolkit..");
+                System.out.println(Color.PURPLE + name + ": Deploying adv. exploit toolkit..");
                 Thread.sleep(400);
                 System.out.println("Privilage escalation success...");
                 Thread.sleep(400);
@@ -33,7 +33,7 @@ class Kali extends User {
                 target.takeDmg(dmg);
                 mana -= 15;
             } else {
-                System.out.println("Not enough sanity!, Take more inhaler");
+                System.out.println("Not enough sanity!, Take more inhaler" + Color.RESET);
                 Thread.sleep(400);
             }
         } catch (Exception e) {
