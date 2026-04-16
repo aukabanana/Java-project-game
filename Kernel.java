@@ -7,7 +7,7 @@ public class Kernel {
             System.out.println("=================================================");
             Thread.sleep(500);
 
-            String[] greet = { "Terminal: ", "`Welcome,", " to ", "command", " line ", "world", " :D`" };
+            String[] greet = { "Terminal: ", "`Welcome,", " To ", "Command", " Line ", "World", " :D`" };
             for (String gt : greet) {
                 System.out.print(gt);
                 Thread.sleep(400);
@@ -76,9 +76,10 @@ public class Kernel {
                     break;
                 default:
                     System.out.println("`Error typing, Try again...`");
+                    return;
             }
 
-            String[] lastCall = { "Terminal: Initializing...", "setname: " + name, "set OS: " + os };
+            String[] lastCall = { "Terminal: Initializing...", "Setting Name: " + name, "Initializing OS: " + os };
             for (String lc : lastCall) {
                 System.out.println(lc);
                 Thread.sleep(1000);
@@ -88,11 +89,11 @@ public class Kernel {
 
             System.out.println("Terminal: Let's deal with that troublemaker !!");
             Thread.sleep(500);
-            System.out.println("!--ALERT--!");
+            System.out.println("!-- - - - - - - - - - ALERT - - - - - - - - - --!");
             Thread.sleep(700);
-            System.out.println("System Alert: High CPU Usage detected...");
+            System.out.println("System Alert: High CPU Usage detected ...");
             Thread.sleep(1000);
-            System.out.println("malware ID <undefine> consuming resources...");
+            System.out.println("malware ID <undefine> consuming resources ...");
             Thread.sleep(1000);
             System.out.println();
             System.out.println("You must TERMINATE it before system crash !");
@@ -121,7 +122,7 @@ public class Kernel {
                 System.out.println("Available commands:");
                 System.out.println("> (1) kill                 (terminate process)");
                 System.out.println("> (2) exploit              (use special skill)");
-                System.out.println("> (3) systemctl_restart    (recover system)");
+                System.out.println("> (3) systemctl_restart    (recover system) ");
                 System.out.println("> (4) sudo_su              (restore sanity)");
                 String action = sc.next();
 
